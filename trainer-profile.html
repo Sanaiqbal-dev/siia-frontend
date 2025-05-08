@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Modal</title>
+  <link rel="stylesheet" href="styles/main.css" />
+
+  
+</head>
+<body>
+  <div class="trainer-modal">
+    <div class="profile-header">
+      <div class="profile-image">
+        <img src="/api/placeholder/400/400" alt="Profile Image">
+      </div>
+      <h2 class="profile-name">Aster Seawalker</h2>
+      <span class="profile-role">Admin</span>
+    </div>
+
+    <div class="form-section">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name-en">Name (English)</label>
+          <input type="text" id="name-en" value="Aster Seawalker" class="direction-aware">
+        </div>
+        <div class="form-group">
+          <label for="name-ar" class="rtl-text">اسم (عربية)</label>
+          <input type="text" id="name-ar" value="استر سيووكر" class="rtl-text">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="about">About me</label>
+        <textarea id="about">As a course trainer for this beginner-friendly online cybersecurity program, I guide students through key concepts like network security, threat detection, and data protection. My goal is to help learners identify vulnerabilities, implement effective security measures, and appreciate the critical importance of protecting both personal and organizational information.</textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="country">Country</label>
+          <input type="text" id="country" placeholder="Country here">
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" id="city" placeholder="City here">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="national-id">National ID</label>
+          <input type="text" id="national-id" value="1234567890123">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" value="abc@xyz.com">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="language">Language</label>
+          <select id="language">
+            <option selected>English</option>
+            <option>Arabic</option>
+            <option>French</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="qualification">Qualification</label>
+          <select id="qualification">
+            <option selected>Choose</option>
+            <option>Bachelor's Degree</option>
+            <option>Master's Degree</option>
+            <option>PhD</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Gender (Optional)</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="male" name="gender" checked>
+              <label for="male">Male</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="female" name="gender">
+              <label for="female">Female</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Availability</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="online" name="availability" checked>
+              <label for="online">Online</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="in-person" name="availability">
+              <label for="in-person">In-person</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="hybrid" name="availability">
+              <label for="hybrid">Hybrid</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="schedule">Schedule Days</label>
+          <select id="schedule">
+            <option selected>Sunday To Thursday</option>
+            <option>Monday To Friday</option>
+            <option>Saturday To Wednesday</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="time">Availability Time</label>
+          <select id="time">
+            <option selected>9:00 AM To 1:30 PM</option>
+            <option>2:00 PM To 6:30 PM</option>
+            <option>6:30 PM To 10:00 PM</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="joining-date">Joining date</label>
+        <input type="text" id="joining-date" value="01 January, 2025" readonly>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="btn btn-cancel">Discard Changes</button>
+      <button class="btn btn-save">Save Changes</button>
+    </div>
+  </div>
+</body>
+</html>

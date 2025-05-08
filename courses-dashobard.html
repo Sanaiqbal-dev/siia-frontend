@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS Dashboard</title>
+    <link rel="stylesheet" href="styles/courses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile">
+                <div class="avatar">
+                    <img src="/placeholder.svg?height=80&width=80" alt="Profile avatar">
+                </div>
+                <div class="user-info">
+                    <h3>Aster Seawalker</h3>
+                    <span class="role">Admin</span>
+                </div>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-th-large"></i> Dashboard</a>
+                    </li>
+                    <li class="active">
+                        <a href="#"><i class="fas fa-book"></i> Courses</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-list"></i> Programs</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-clipboard-check"></i> Assessments</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-calendar"></i> Events</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-id-card"></i> Memberships</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-user-shield"></i> Admins</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-chalkboard-teacher"></i> Trainers</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-user-graduate"></i> Students</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-chart-bar"></i> Reports</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-credit-card"></i> Payments</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-book-open"></i> Library</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-certificate"></i> Certificates</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search anything">
+                </div>
+                <div class="header-icons">
+                    <a href="#"><i class="far fa-envelope"></i></a>
+                    <a href="#"><i class="far fa-bell"></i><span class="notification-badge">1</span></a>
+                    <a href="#"><i class="far fa-question-circle"></i></a>
+                </div>
+            </header>
+
+            <!-- Courses Section -->
+            <section class="courses-section">
+                <div class="section-header">
+                    <div>
+                        <h2>Courses</h2>
+                        <p>View and manage your courses</p>
+                    </div>
+                    <div class="section-actions">
+                        <div class="search-small">
+                            <input type="text" placeholder="Search here...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                        <button class="btn-filter"><i class="fas fa-filter"></i> Apply Filters</button>
+                        <button class="btn-create"><i class="fas fa-plus"></i> Create new</button>
+                    </div>
+                </div>
+
+                <!-- Courses Table -->
+                <div class="table-container">
+                    <table class="courses-table">
+                        <thead>
+                            <tr>
+                                <th>Sr. #</th>
+                                <th>Course Title</th>
+                                <th>Code</th>
+                                <th>Format</th>
+                                <th>Type</th>
+                                <th>Level</th>
+                                <th>Schedule</th>
+                                <th>Duration</th>
+                                <th>Location</th>
+                                <th>Enrollment</th>
+                                <th>Trainer</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1234</td>
+                                <td>Essentials of Internal Auditing</td>
+                                <td>MCI123 XYZ</td>
+                                <td>Online Live</td>
+                                <td>Soft Skills</td>
+                                <td>Beginner</td>
+                                <td>Sat to Thu 09:00 to 10:00</td>
+                                <td>Jul 20 to Aug 26, 2025</td>
+                                <td><a href="#" class="zoom-link">Zoom Link</a></td>
+                                <td>25 out of 50</td>
+                                <td>Ahmed & Ali</td>
+                                <td><span class="status publish">Publish</span></td>
+                            </tr>
+                            <tr>
+                                <td>1235</td>
+                                <td>Essentials of Internal Auditing</td>
+                                <td>MCI123 XYZ</td>
+                                <td>Online Recorded</td>
+                                <td>Professional Skills</td>
+                                <td>Intermediate</td>
+                                <td>Sat to Thu 09:00 to 10:00</td>
+                                <td>Jul 20 to Aug 26, 2025</td>
+                                <td><a href="#" class="zoom-link">Zoom Link</a></td>
+                                <td>25 out of 50</td>
+                                <td>Ahmed</td>
+                                <td><span class="status publish">Publish</span></td>
+                            </tr>
+                            <tr>
+                                <td>1239</td>
+                                <td>Essentials of Internal Auditing</td>
+                                <td>MCI123 XYZ</td>
+                                <td>Online Live</td>
+                                <td>CIA</td>
+                                <td>Beginner</td>
+                                <td>Sat to Thu 09:00 to 10:00</td>
+                                <td>Jul 20 to Aug 26, 2025</td>
+                                <td><a href="#" class="zoom-link">Zoom Link</a></td>
+                                <td>25 out of 50</td>
+                                <td>Ahmed</td>
+                                <td><span class="status complete">Complete</span></td>
+                            </tr>
+                            <tr>
+                                <td>1240</td>
+                                <td>Essentials of Internal Auditing</td>
+                                <td>MCI123 XYZ</td>
+                                <td>Online Live</td>
+                                <td>Soft Skills</td>
+                                <td>Beginner</td>
+                                <td>Sat to Thu 09:00 to 10:00</td>
+                                <td>Jul 20 to Aug 26, 2025</td>
+                                <td><a href="#" class="zoom-link">Zoom Link</a></td>
+                                <td>25 out of 50</td>
+                                <td>Ahmed</td>
+                                <td><span class="status complete">Complete</span></td>
+                            </tr>
+                            <tr>
+                                <td>1240</td>
+                                <td>Essentials of Internal Auditing</td>
+                                <td>MCI123 XYZ</td>
+                                <td>Online Live</td>
+                                <td>Soft Skills</td>
+                                <td>Beginner</td>
+                                <td>Sat to Thu 09:00 to 10:00</td>
+                                <td>Jul 20 to Aug 26, 2025</td>
+                                <td><a href="#" class="zoom-link">Zoom Link</a></td>
+                                <td>25 out of 50</td>
+                                <td>Ahmed</td>
+                                <td><span class="status complete">Complete</span></td>
+                            </tr>
+                            <tr>
+                                <td>1240</td>
+                                <td>Essentials of Internal Auditing</td>
+                                <td>MCI123 XYZ</td>
+                                <td>Online Live</td>
+                                <td>Soft Skills</td>
+                                <td>Beginner</td>
+                                <td>Sat to Thu 09:00 to 10:00</td>
+                                <td>Jul 20 to Aug 26, 2025</td>
+                                <td><a href="#" class="zoom-link">Zoom Link</a></td>
+                                <td>25 out of 50</td>
+                                <td>Ahmed</td>
+                                <td><span class="status complete">Complete</span></td>
+                            </tr>
+                            <tr>
+                                <td>1240</td>
+                                <td>Essentials of Internal Auditing</td>
+                                <td>MCI123 XYZ</td>
+                                <td>Online Live</td>
+                                <td>Soft Skills</td>
+                                <td>Beginner</td>
+                                <td>Sat to Thu 09:00 to 10:00</td>
+                                <td>Jul 20 to Aug 26, 2025</td>
+                                <td><a href="#" class="zoom-link">Zoom Link</a></td>
+                                <td>25 out of 50</td>
+                                <td>Ahmed</td>
+                                <td><span class="status complete">Complete</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <div class="pagination-info">
+                        <span>Show</span>
+                        <select>
+                            <option>7</option>
+                            <option>10</option>
+                            <option>25</option>
+                            <option>50</option>
+                        </select>
+                        <span>Out of 13</span>
+                    </div>
+                    <div class="pagination-details">
+                        <a href="#" class="tap-details">Tap to see details</a>
+                    </div>
+                    <div class="pagination-controls">
+                        <a href="#" class="prev"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">...</a>
+                        <a href="#">10</a>
+                        <a href="#" class="next"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
