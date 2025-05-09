@@ -37,9 +37,12 @@
         if (passwordInput.type === "password") {
           passwordInput.type = "text";
           toggleIcon.setAttribute("data-icon", "eye-slash"); // Update icon state
+          toggleIcon.nextElementSibling.textContent = "Hide";
+
         } else {
           passwordInput.type = "password";
           toggleIcon.setAttribute("data-icon", "eye"); // Update icon state
+          toggleIcon.nextElementSibling.textContent = "Show";
         }
       }
     </script>
@@ -107,22 +110,11 @@
                       onclick="togglePasswordVisibility()"
                       aria-label="Toggle password visibility"              
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        alt="Show/Hide Password"
-                        data-icon="eye"
-                      >
-                        <path
-                          d="M12 4.5C7.305 4.5 3.27 7.61 1.5 12c1.77 4.39 5.805 7.5 10.5 7.5s8.73-3.11 10.5-7.5c-1.77-4.39-5.805-7.5-10.5-7.5zM12 15.75a3.75 3.75 0 1 1 0-7.5 3.75 3.75 0 0 1 0 7.5z"
-                        />
-                        <circle cx="12" cy="12" r="2.25" />
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.0189 4.88158L19.283 4.14564C19.075 3.93765 18.691 3.96966 18.451 4.2576L15.8908 6.80157C14.7388 6.30562 13.4749 6.06562 12.1468 6.06562C8.1947 6.08156 4.77092 8.38553 3.1228 11.6977C3.02677 11.9057 3.02677 12.1617 3.1228 12.3376C3.89073 13.9057 5.04281 15.2017 6.48281 16.1776L4.38682 18.3056C4.14682 18.5456 4.11481 18.9296 4.27485 19.1376L5.0108 19.8735C5.21879 20.0815 5.60277 20.0495 5.84277 19.7616L19.8907 5.71369C20.1947 5.47383 20.2267 5.08987 20.0187 4.88185L20.0189 4.88158ZM12.9948 9.71347C12.7228 9.64945 12.4349 9.56949 12.1628 9.56949C10.8028 9.56949 9.71489 10.6575 9.71489 12.0174C9.71489 12.2894 9.77891 12.5774 9.85887 12.8494L8.78675 13.9054C8.4668 13.3455 8.29081 12.7214 8.29081 12.0175C8.29081 9.88948 10.0028 8.17746 12.1308 8.17746C12.8349 8.17746 13.4588 8.35344 14.0188 8.6734L12.9948 9.71347Z" fill="#8A8A8A"/>
+                      <path d="M21.1694 11.6979C20.6095 10.5779 19.8734 9.56994 18.9615 8.75391L15.9854 11.6979V12.0179C15.9854 14.1459 14.2734 15.8579 12.1454 15.8579H11.8255L9.9375 17.7459C10.6416 17.8898 11.3775 17.9859 12.0975 17.9859C16.0496 17.9859 19.4734 15.6819 21.1215 12.3537C21.2655 12.1297 21.2655 11.9058 21.1695 11.6977L21.1694 11.6979Z" fill="#8A8A8A"/>
                       </svg>
-                      <label>Hide</label>
+                      <label>Show</label>
                     </button>
                   </label>
                   <input
@@ -157,7 +149,7 @@
             <div class="register-divider">
               <span>New to our community?</span>
             </div>
-            <button class="register-btn"  aria-label="Request a new account">Request an account</button>
+            <button class="register-btn"  aria-label="Request a new account">Request for account</button>
           </div>
         </section>
       </main>

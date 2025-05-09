@@ -278,6 +278,13 @@ button {
     @include flex(row);
     background: none;
     border: none;
+    gap: 10px;
+
+    label {
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+    }
   }
   .error-message {
     color: #e53935;
@@ -473,19 +480,6 @@ input[type="number"] {
     height: 100%;
     object-fit: cover;
   }
-
-  .profile-name {
-    font-size: 22px;
-    font-weight: 600;
-    color: #212121;
-    margin-bottom: 4px;
-  }
-
-  .profile-role {
-    font-size: 14px;
-    color: #757575;
-  }
-
   .form-section {
     margin-bottom: 20px;
   }
@@ -537,8 +531,12 @@ input[type="number"] {
 
   .radio-group {
     display: flex;
-    gap: 24px;
+    gap: 50px;
     margin-top: 8px;
+
+    label {
+      margin-bottom: 0;
+    }
   }
 
   .radio-option {
@@ -554,8 +552,7 @@ input[type="number"] {
   }
 
   .buttons {
-    display: flex;
-    justify-content: flex-end;
+    @include flex(row, center, center);
     gap: 16px;
     margin-top: 30px;
   }
@@ -595,5 +592,68 @@ input[type="number"] {
     background-repeat: no-repeat;
     background-position: right 14px center;
     padding-right: 34px;
+  }
+  .time-slots {
+    .form-row {
+      display: flex;
+      margin-bottom: 20px;
+      max-width: 620px;
+    }
+
+    .form-group {
+      flex: 1;
+      margin-right: 20px;
+      position: relative;
+    }
+
+    .form-group:last-child {
+      margin-right: 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    select {
+      width: 100%;
+      outline: none;
+      appearance: none;
+      background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      background-size: 12px auto;
+      padding: 16px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 16px;
+      color: #212121;
+      background-color: #ffffff;
+    }
+
+    .time-container {
+      @include flex(row, center, center);
+    }
+
+    .time-container select {
+      flex: 1;
+    }
+
+    .time-separator {
+      margin: 0 10px;
+      margin-top: 20px;
+      color: #666;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: #e7f4fd;
+      color: #0077cc;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      margin-top: 10px;
+    }
   }
 }
